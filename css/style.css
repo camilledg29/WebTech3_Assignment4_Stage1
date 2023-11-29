@@ -167,9 +167,9 @@ footer {
     padding: .625rem;
 }
 
- /* ------- iPhone SE Size ------- */
+ /* ------- Phone Size ------- */
 
- @media screen and (max-width: 375px) {
+ @media screen and (max-width: 30em) {
     #menu-toggle {
         display: block;
         color: #e7c240;
