@@ -162,6 +162,60 @@ footer {
     justify-content: center;
     padding: .625rem;
 }
+
+/* ----------- Product Page Section & About Page ------------ */
+.grid-product,
+.grid-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-product div,
+.grid-about div,
+.grid-earrings div {
+    margin: 1.25rem;
+    padding: 0.625rem;
+    transition: .3s ease-in-out;
+    text-align: center;
+    margin: 0;
+}
+
+.grid-product div,
+.grid-about div {
+    padding-top: 8rem;
+}   
+
+.grid-product img,
+.grid-about img,
+.grid-earrings img {
+    width: 90%;
+}
+
+.grid-earrings {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.button {
+    background-color: rgb(255, 154, 3);
+    color: white;
+    font-size: .90rem;
+    padding: .625rem 1.5rem;
+    border-radius: .300rem;
+    border: none;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: white; /* Green */
+    color: rgb(255, 154, 3) ;
+    border:rgb(255, 154, 3) 0.125rem solid;
+}
+
+
+
+
+
 /* ------- Small Screen ------- */
 
 @media screen and (max-width: 64em) {
@@ -183,7 +237,11 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
     }
+
+
 }
+
+
 /* ------- Tablet Size ------- */
 
 @media screen and (max-width: 48em) {
@@ -205,10 +263,18 @@ footer {
         padding: 20px;
     }
 
-    .grid {
+    .grid,
+    .grid-earrings {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
+    }
+
+    .grid-product,
+    .grid-about {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 0;
     }
 }
 
@@ -231,7 +297,8 @@ footer {
         font-size: 1rem;
     }
 
-    .grid {
+    .grid,
+    .grid-earrings {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -260,8 +327,14 @@ footer {
 
     footer {
         display: flex;
-        flex-direction: column;
         font-size: 0.7rem;
     }
+
+    .grid-product,
+    .grid-about {
+
+        padding-top: 0;
+    }
+
 }
 
